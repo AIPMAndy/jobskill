@@ -20,7 +20,25 @@ CREATE TABLE IF NOT EXISTS resumes (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
   content TEXT NOT NULL, -- Markdown format
-  is_base BOOLEAN DEFAULT 0, -- Base resume flag
+  file_path TEXT,
+  is_default BOOLEAN DEFAULT 0,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Jobs (tracked opportunities)
+CREATE TABLE IF NOT EXISTS jobs (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  company TEXT NOT NULL,
+  location TEXT,
+  url TEXT,
+  description TEXT,
+  salary_range TEXT,
+  job_type TEXT,
+  status TEXT DEFAULT 'new',
+  evaluation_score REAL,
+  evaluation_summary TEXT,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
@@ -28,22 +46,27 @@ CREATE TABLE IF NOT EXISTS resumes (
 -- Job applications
 CREATE TABLE IF NOT EXISTS applications (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  company TEXT NOT NULL,
-  role TEXT NOT NULL,
-  url TEXT,
-  jd_text TEXT, -- Job description
-  score REAL CHECK (score >= 0 AND score <= 5),
-  status TEXT NOT NULL CHECK (status IN (
-    'Evaluated', 'Applied', 'Interview', 'Offer', 'Rejected', 'Discarded', 'SKIP'
-  )),
-  report_path TEXT, -- Relative path: reports/xxx.md
-  pdf_path TEXT, -- Relative path: output/xxx.pdf
+  job_id INTEGER NOT NULL,
   resume_id INTEGER,
+  status TEXT DEFAULT 'applied',
+  applied_date DATE,
   notes TEXT,
-  applied_at DATETIME,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (job_id) REFERENCES jobs(id) ON DELETE CASCADE,
   FOREIGN KEY (resume_id) REFERENCES resumes(id) ON DELETE SET NULL
+);
+
+-- Interviews
+CREATE TABLE IF NOT EXISTS interviews (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  application_id INTEGER NOT NULL,
+  interview_date DATETIME,
+  interview_type TEXT,
+  notes TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (application_id) REFERENCES applications(id) ON DELETE CASCADE
 );
 
 -- Job scan history (deduplication)
@@ -83,8 +106,10 @@ CREATE TABLE IF NOT EXISTS interview_prep (
 );
 
 -- Indexes for performance
+CREATE INDEX IF NOT EXISTS idx_jobs_status ON jobs(status);
+CREATE INDEX IF NOT EXISTS idx_jobs_score ON jobs(evaluation_score DESC);
 CREATE INDEX IF NOT EXISTS idx_applications_status ON applications(status);
-CREATE INDEX IF NOT EXISTS idx_applications_score ON applications(score DESC);
+CREATE INDEX IF NOT EXISTS idx_applications_job ON applications(job_id);
 CREATE INDEX IF NOT EXISTS idx_applications_created ON applications(created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_scan_history_company_job ON scan_history(company, job_id);
 
