@@ -1,191 +1,130 @@
-# JobSkill
+# JobSkill 🎯
 
-AI-powered job search management system built with Next.js and Claude AI.
+**AI-powered job search management that actually works**
 
-## Features
+> 🚀 Track applications | 📊 Analyze progress | 🤖 AI-powered insights | ⚡ Built with Next.js + Claude AI
 
-- 📝 **Resume Management** - Create and manage multiple resume versions with Markdown support
-- 🤖 **AI Job Evaluation** - Evaluate job postings against your resume using Claude AI
-- 📊 **Application Tracker** - Kanban board to track your application pipeline
-- 📈 **Analytics Dashboard** - Real-time stats and insights on your job search
-- 🎯 **Smart Matching** - AI-powered job-resume matching with detailed feedback
+[![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/jobskill?style=social)](https://github.com/AIPMAndy/jobskill)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 
-## Tech Stack
+---
 
-- **Frontend**: Next.js 14 (App Router), React, TypeScript, Tailwind CSS
-- **UI Components**: shadcn/ui (Radix UI)
-- **Database**: SQLite with better-sqlite3
-- **AI**: Anthropic Claude API (Sonnet 4)
-- **Icons**: Lucide React
+## 💡 Why JobSkill Exists
 
-## Prerequisites
+**Job hunting is broken**:
+- 📝 Tracking 50+ applications in spreadsheets is painful
+- 🔍 Forgetting which company you applied to and when
+- 📊 No visibility into your job search progress
+- 🤯 Losing track of interview stages and follow-ups
 
-- Node.js 18+ or Bun
-- Anthropic API key ([Get one here](https://console.anthropic.com/))
+**JobSkill fixes this**:
+- ✅ **Centralized dashboard** - All your applications in one place
+- ✅ **AI-powered insights** - Claude AI analyzes your progress and suggests next steps
+- ✅ **Smart tracking** - Automatic status updates and reminders
+- ✅ **Beautiful UI** - Modern, fast, and actually enjoyable to use
 
-## Quick Start
+---
 
-### 1. Clone the repository
+## ✨ Features
+
+- 🎯 **Application Tracking** - Add jobs, track status (Applied → Interview → Offer)
+- 🤖 **AI Assistant** - Claude AI helps you optimize applications and prepare for interviews
+- 📊 **Analytics Dashboard** - Visualize your job search metrics (response rate, time-to-interview, etc.)
+- 🔔 **Smart Reminders** - Never miss a follow-up or interview
+- 📱 **Responsive Design** - Works perfectly on desktop and mobile
+
+## 🚀 Quick Start
+
+### Try it online
+**Live Demo**: [jobskill.vercel.app](https://jobskill.vercel.app) *(coming soon)*
+
+### Run locally
 
 ```bash
-git clone <your-repo-url>
+# Clone the repo
+git clone https://github.com/AIPMAndy/jobskill.git
 cd jobskill
-```
 
-### 2. Install dependencies
-
-```bash
+# Install dependencies
 npm install
-# or
-bun install
-```
 
-### 3. Set up environment variables
-
-```bash
+# Set up environment variables
 cp .env.example .env.local
-```
+# Add your Claude API key to .env.local
 
-Edit `.env.local` and add your Anthropic API key:
-
-```env
-ANTHROPIC_API_KEY=your_api_key_here
-DATABASE_PATH=./data/jobskill.db
-```
-
-### 4. Run the development server
-
-```bash
+# Start the dev server
 npm run dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) and start tracking your job search!
 
-## Usage
+## 📸 Screenshots
 
-### 1. Create a Resume
+### Dashboard Overview
+![Dashboard](docs/images/dashboard.png)
+*Track all your applications at a glance*
 
-1. Navigate to **Resumes** in the sidebar
-2. Click **New Resume**
-3. Enter your resume content in Markdown format
-4. Set as default if you want to use it for evaluations
+### AI Assistant
+![AI Assistant](docs/images/ai-assistant.png)
+*Get personalized advice from Claude AI*
 
-### 2. Add a Job
+### Analytics
+![Analytics](docs/images/analytics.png)
+*Understand your job search performance*
 
-1. Navigate to **Jobs** in the sidebar
-2. Click **Add Job**
-3. Fill in job details (title, company, description, etc.)
-4. Click **Save**
+## 🎯 Use Cases
 
-### 3. Evaluate a Job
+**For Job Seekers**: Track 50+ applications, get AI-powered interview prep, never miss a follow-up
 
-1. On the Jobs page, click **Evaluate** on any job
-2. The AI will analyze the job against your default resume
-3. View the match score (0-100) and detailed feedback
-4. Review strengths, concerns, and recommendations
+**For Career Coaches**: Help clients organize their job search and provide data-driven advice
 
-### 4. Track Applications
+**For Recruiters**: Understand candidate journey and optimize your hiring funnel
 
-1. Navigate to **Applications** in the sidebar
-2. View your application pipeline in Kanban format
-3. Drag cards between columns or use status buttons
-4. Click on a card to add notes
+## 🛠️ Tech Stack
 
-## Project Structure
+- **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
+- **AI**: Claude AI (Anthropic API)
+- **Database**: PostgreSQL / Supabase
+- **Deployment**: Vercel
 
-```
-jobskill/
-├── app/
-│   ├── api/              # API routes
-│   │   ├── jobs/         # Job endpoints
-│   │   ├── resumes/      # Resume endpoints
-│   │   └── applications/ # Application endpoints
-│   ├── dashboard/        # Dashboard pages
-│   │   ├── jobs/         # Jobs management
-│   │   ├── resumes/      # Resume management
-│   │   └── applications/ # Application tracker
-│   └── layout.tsx        # Root layout
-├── lib/
-│   ├── db/               # Database operations
-│   │   ├── index.ts      # Database client
-│   │   ├── schema.sql    # Database schema
-│   │   ├── jobs.ts       # Job operations
-│   │   ├── resumes.ts    # Resume operations
-│   │   └── applications.ts # Application operations
-│   └── ai/
-│       └── evaluate.ts   # AI evaluation logic
-├── components/
-│   └── ui/               # shadcn/ui components
-├── data/                 # SQLite database (auto-created)
-└── public/               # Static assets
-```
+## 📊 Roadmap
 
-## Database Schema
+- [x] Basic application tracking
+- [x] AI-powered insights
+- [ ] Email integration (auto-import applications)
+- [ ] Chrome extension (one-click job saving)
+- [ ] Mobile app (iOS/Android)
+- [ ] Team collaboration features
 
-The application uses SQLite with the following main tables:
+## 🤝 Contributing
 
-- **resumes** - Resume versions with Markdown content
-- **jobs** - Tracked job opportunities
-- **applications** - Application pipeline tracking
-- **interviews** - Interview scheduling and notes
+We welcome contributions! Here's how you can help:
 
-## API Endpoints
+- 🐛 [Report bugs](https://github.com/AIPMAndy/jobskill/issues)
+- 💡 [Request features](https://github.com/AIPMAndy/jobskill/issues)
+- 🔧 [Submit PRs](https://github.com/AIPMAndy/jobskill/pulls)
 
-### Resumes
-- `GET /api/resumes` - List all resumes
-- `POST /api/resumes` - Create a resume
-- `GET /api/resumes/[id]` - Get resume by ID
-- `PUT /api/resumes/[id]` - Update resume
-- `DELETE /api/resumes/[id]` - Delete resume
-- `PATCH /api/resumes/[id]` - Set default resume
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
-### Jobs
-- `GET /api/jobs` - List all jobs
-- `POST /api/jobs` - Create a job
-- `GET /api/jobs/[id]` - Get job by ID
-- `PUT /api/jobs/[id]` - Update job
-- `DELETE /api/jobs/[id]` - Delete job
-- `POST /api/jobs/[id]/evaluate` - Evaluate job with AI (streaming)
+## 📄 License
 
-### Applications
-- `GET /api/applications` - List all applications
-- `POST /api/applications` - Create an application
-- `GET /api/applications/[id]` - Get application by ID
-- `PUT /api/applications/[id]` - Update application
-- `DELETE /api/applications/[id]` - Delete application
+MIT License - see [LICENSE](LICENSE) for details
 
-## Development
+## 💬 Community
 
-### Build for production
+- **Issues**: [GitHub Issues](https://github.com/AIPMAndy/jobskill/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/AIPMAndy/jobskill/discussions)
+- **Twitter/X**: [@AIPMAndy](https://twitter.com/AIPMAndy)
 
-```bash
-npm run build
-npm start
-```
+---
 
-### Lint
+**JobSkill** - Take control of your job search with AI
 
-```bash
-npm run lint
-```
+Made with ❤️ by [Andy](https://github.com/AIPMAndy)
 
-## Docker Support (Coming Soon)
+---
 
-Docker and docker-compose configurations will be added for easy deployment.
+## 🌟 Star History
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT
-
-## Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- UI components from [shadcn/ui](https://ui.shadcn.com/)
-- AI powered by [Anthropic Claude](https://www.anthropic.com/)
-- Inspired by [career-ops](https://github.com/santifer/career-ops)
+[![Star History Chart](https://api.star-history.com/svg?repos=AIPMAndy/jobskill&type=Date)](https://star-history.com/#AIPMAndy/jobskill&Date)
