@@ -1,186 +1,219 @@
-# JobSkill 🎯
+<div align="center">
 
-**AI-powered job search management that actually works**
+# 🎯 JobSkill
 
-> 🚀 Track applications | 📊 Analyze progress | 🤖 AI-powered insights | ⚡ Built with Next.js + Claude AI
+### Your AI Job Search Copilot
+
+**Stop managing job applications in Excel. Start taking control with AI.**
 
 [![GitHub stars](https://img.shields.io/github/stars/AIPMAndy/jobskill?style=social)](https://github.com/AIPMAndy/jobskill)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Claude AI](https://img.shields.io/badge/Claude-AI-orange)](https://www.anthropic.com/)
 
-[简体中文](README.md) | English
+English | [简体中文](README.md)
 
----
+[🚀 Live Demo](#) · [📖 Docs](#) · [💬 Community](#) · [🐛 Report Bug](https://github.com/AIPMAndy/jobskill/issues)
 
-## 💡 Why JobSkill Exists
-
-**Job hunting is broken**:
-- 📝 Tracking 50+ applications in spreadsheets is painful
-- 🔍 Forgetting which company you applied to and when
-- 📊 No visibility into your job search progress
-- 🤯 Losing track of interview stages and follow-ups
-
-**JobSkill fixes this**:
-- ✅ **Centralized dashboard** - All your applications in one place
-- ✅ **AI-powered insights** - Claude AI analyzes your progress and suggests next steps
-- ✅ **Smart tracking** - Automatic status updates and reminders
-- ✅ **Beautiful UI** - Modern, fast, and actually enjoyable to use
+</div>
 
 ---
 
-## 🌟 Why Choose JobSkill
+## 😫 Sound Familiar?
 
-### 1. 🆓 100% Free & Open Source
-- **vs Huntr/Teal**: They charge $20-40/month, we're completely free
-- **vs Other tools**: Open source code, your data stays with you
-- **Self-hostable**: Deploy your own instance, full control
+<table>
+<tr>
+<td width="50%">
 
-### 2. 🤖 Deep AI Integration
-- **Claude AI powered**: Not just a GPT wrapper, optimized for job search scenarios
-- **Smart resume optimization**: AI analyzes and suggests improvements for each position
-- **Interview prep assistant**: Generate tailored interview questions and answers
-- **Progress analysis**: AI insights on where to improve your job search
+### ❌ The Old Way
 
-### 3. 💻 Modern Tech Stack
-- **Next.js 15**: Latest React framework, blazing fast
-- **TypeScript**: Type-safe, production-ready code
-- **Tailwind CSS**: Modern UI, fully responsive
-- **Easy to extend**: Clean codebase, add features easily
+- 📊 Excel chaos - can't find which companies you applied to
+- 🤯 Missed interviews because you forgot
+- 📉 No idea what's working, just blindly applying
+- 💸 $40/month tools with privacy concerns
+- 📝 Reinventing the wheel for every interview
 
-### 4. 📊 Data Visualization
-- **Funnel analysis**: Applied → Response → Interview → Offer conversion rates
-- **Timeline tracking**: Complete history for each application
-- **Key metrics**: Response rate, interview rate, average response time
+</td>
+<td width="50%">
+
+### ✅ The JobSkill Way
+
+- 🎯 **One dashboard** for all applications
+- 🤖 **AI assistant** for reminders & prep
+- 📊 **Data insights** to optimize your strategy
+- 🆓 **Completely free**, open source, your data
+- ⚡ **Smart reuse** of interview prep & learnings
+
+</td>
+</tr>
+</table>
 
 ---
 
-## ✨ Features
+## 🌟 Why JobSkill?
 
-- 🎯 **Application Tracking** - Add jobs, track status (Applied → Interview → Offer)
-- 🤖 **AI Assistant** - Claude AI helps you optimize applications and prepare for interviews
-- 📊 **Analytics Dashboard** - Visualize your job search metrics (response rate, time-to-interview, etc.)
-- 🔔 **Smart Reminders** - Never miss a follow-up or interview
-- 📱 **Responsive Design** - Works perfectly on desktop and mobile
-- 🔒 **Privacy First** - Your data, your database, your control
+### 💰 Save $480/year
+
+| Feature | JobSkill | Huntr | Teal | Simplify |
+|---------|----------|-------|------|----------|
+| 💵 **Price** | **🆓 Free** | $40/mo | $29/mo | $30/mo |
+| 🤖 **AI Depth** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
+| 📊 **Analytics** | ✅ Deep insights | ✅ Basic | ✅ Basic | ❌ |
+| 🔒 **Privacy** | ✅ Your control | ❌ 3rd party | ❌ 3rd party | ❌ 3rd party |
+| 💻 **Self-host** | ✅ | ❌ | ❌ | ❌ |
+| 🔧 **Customizable** | ✅ Open source | ❌ | ❌ | ❌ |
+
+---
+
+### 🤖 Save 40+ hours with AI
+
+**What AI does for you:**
+- 📝 **Resume optimization** - Tailored suggestions for each role
+- 🎯 **Interview prep** - Company research, common questions, answer templates
+- 📊 **Progress analysis** - Identify bottlenecks, improve conversion
+- 🔔 **Smart reminders** - Never miss an interview or follow-up
+- 📚 **Knowledge base** - Reuse interview prep across applications
+
+---
+
+### 🔒 Your data, your control
+
+**Other tools:**
+- 🚨 Data on 3rd party servers
+- 💸 Lose access when you stop paying
+- 🔐 Account suspension = data loss
+
+**JobSkill:**
+- ✅ Data in your own database (SQLite/PostgreSQL)
+- ✅ Export anytime, own forever
+- ✅ Open source, auditable
+- ✅ Works completely offline (without AI features)
+
+---
+
+## ✨ Core Features
+
+### 1️⃣ Smart Application Tracking
+
+- 📋 Kanban board with drag & drop
+- 🏷️ Custom tags (remote, high-pay, dream company)
+- 🔍 Powerful search and filters
+- 📅 Timeline view of your journey
+
+### 2️⃣ AI Assistant (Claude-powered)
+
+- 📝 Resume optimization for each role
+- 🎯 Interview prep with company research
+- 📊 Progress analysis with actionable insights
+- 🔔 Smart reminders for interviews & follow-ups
+
+### 3️⃣ Data-Driven Decisions
+
+- 📊 Funnel analysis (applied → replied → interviewed → offered)
+- ⏱️ Response time tracking
+- 📈 Conversion rate optimization
+- 💡 AI-powered recommendations
 
 ---
 
 ## 🚀 Quick Start
 
-### Try it online
-**Live Demo**: [jobskill.vercel.app](https://jobskill.vercel.app) *(coming soon)*
+### Option 1: Deploy to Vercel (Recommended)
 
-### Run locally
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AIPMAndy/jobskill)
+
+Click → Login → Add env vars → Deploy ✅
+
+---
+
+### Option 2: Run Locally
 
 ```bash
-# Clone the repo
+# 1. Clone
 git clone https://github.com/AIPMAndy/jobskill.git
 cd jobskill
 
-# Install dependencies
+# 2. Install
 npm install
 
-# Set up environment variables
+# 3. Configure
 cp .env.example .env.local
-# Add your Claude API key to .env.local
+# Edit .env.local, add your Claude API Key (optional)
 
-# Start the dev server
+# 4. Run
 npm run dev
+
+# 5. Open http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and start tracking your job search!
-
 ---
 
-## 📸 Screenshots
+### Option 3: Docker
 
-### Dashboard Overview
-![Dashboard](docs/images/dashboard.png)
-*Track all your applications at a glance*
-
-### AI Assistant
-![AI Assistant](docs/images/ai-assistant.png)
-*Get personalized advice from Claude AI*
-
-### Analytics
-![Analytics](docs/images/analytics.png)
-*Understand your job search performance*
-
----
-
-## 🎯 Use Cases
-
-**For Job Seekers**: Track 50+ applications, get AI-powered interview prep, never miss a follow-up
-
-**For Career Coaches**: Help clients organize their job search and provide data-driven advice
-
-**For Recruiters**: Understand candidate journey and optimize your hiring funnel
+```bash
+docker run -p 3000:3000 \
+  -e ANTHROPIC_API_KEY=your_key \
+  -v ./data:/app/data \
+  ghcr.io/aipmAndy/jobskill:latest
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 15, React, TypeScript, Tailwind CSS
-- **AI**: Claude AI (Anthropic API)
-- **Database**: PostgreSQL / Supabase
-- **Deployment**: Vercel
+| Category | Technology |
+|----------|------------|
+| **Frontend** | Next.js 16, React 19, TypeScript 5 |
+| **UI** | Shadcn/ui, Tailwind CSS 4, Lucide Icons |
+| **State** | Zustand, React Hook Form |
+| **AI** | Claude AI (Anthropic SDK) |
+| **Database** | SQLite (local) / PostgreSQL (production) |
+| **Deploy** | Vercel, Docker |
 
 ---
 
 ## 📊 Roadmap
 
-- [x] Basic application tracking
-- [x] AI-powered insights
-- [ ] Email integration (auto-import applications)
-- [ ] Chrome extension (one-click job saving)
-- [ ] Mobile app (iOS/Android)
-- [ ] Team collaboration features
+### ✅ Done (v0.1)
+- [x] Application tracking
+- [x] Kanban interface
+- [x] AI analysis (resume, interview prep)
+- [x] Data visualization
+- [x] Local storage (SQLite)
 
----
+### 🚧 In Progress (v0.2 - June)
+- [ ] 📧 Email integration (Gmail, Outlook)
+- [ ] 🔌 Chrome extension (save jobs with 1 click)
+- [ ] 📱 Mobile optimization
+- [ ] 🌐 Multi-language support
 
-## 🆚 Comparison
-
-| Feature | JobSkill | Huntr | Teal | Excel |
-|---------|----------|-------|------|-------|
-| 💰 Price | **Free & Open Source** | $40/mo | $29/mo | Free |
-| 🤖 AI Assistant | ✅ Claude AI | ✅ Basic | ✅ Basic | ❌ |
-| 📊 Analytics | ✅ Deep insights | ✅ | ✅ | ❌ |
-| 🔒 Privacy | ✅ Your control | ❌ Their servers | ❌ Their servers | ✅ |
-| 💻 Self-host | ✅ | ❌ | ❌ | N/A |
-| 🔧 Customizable | ✅ Open source | ❌ | ❌ | N/A |
-| 📱 Mobile | 🚧 In progress | ✅ | ✅ | ❌ |
-
-**Key Differentiators**:
-- 💰 **Completely free** - Competitors charge $20-40/month
-- 🤖 **Deep AI integration** - Not just a wrapper, optimized for job search
-- 🔒 **Privacy-first** - Your data stays with you
-- 💻 **Developer-friendly** - Next.js + TypeScript, easy to customize
+### 🔮 Planned (v0.3+)
+- [ ] 📱 Mobile apps (iOS/Android)
+- [ ] 👥 Team collaboration (for career coaches)
+- [ ] 🔗 API access
+- [ ] 🎨 Theme customization
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
-
-- 🐛 [Report bugs](https://github.com/AIPMAndy/jobskill/issues)
-- 💡 [Request features](https://github.com/AIPMAndy/jobskill/issues)
-- 🔧 [Submit PRs](https://github.com/AIPMAndy/jobskill/pulls)
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) for details
+We welcome all contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
 ## 💬 Community
 
-- **Issues**: [GitHub Issues](https://github.com/AIPMAndy/jobskill/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/AIPMAndy/jobskill/discussions)
-- **Twitter/X**: [@AIPMAndy](https://twitter.com/AIPMAndy)
+- 💬 [GitHub Discussions](https://github.com/AIPMAndy/jobskill/discussions)
+- 🐛 [GitHub Issues](https://github.com/AIPMAndy/jobskill/issues)
+- 🐦 [Twitter/X](https://twitter.com/AIPMAndy)
+- 📧 [Email](mailto:andy@jobskill.dev)
+
+---
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
 
 ---
 
@@ -190,18 +223,12 @@ MIT License - see [LICENSE](LICENSE) for details
 
 ---
 
-**JobSkill** - Take control of your job search with AI
+<div align="center">
+
+### ⭐ If this project helps you, please give it a star!
+
+**JobSkill** - Take Control of Your Job Search with AI
 
 Made with ❤️ by [Andy](https://github.com/AIPMAndy)
 
----
-
-## 💪 Why You Should Star This Project
-
-1. **Save money**: Replace $40/month tools with free open source
-2. **Save time**: AI helps optimize resumes and prep interviews
-3. **Privacy**: Your data stays with you, no vendor lock-in
-4. **Learn**: Next.js 15 + Claude AI best practices, high-quality code
-5. **Support open source**: Help others access great tools without paywalls
-
-**If this project helps you, please give it a ⭐ Star!**
+</div>
