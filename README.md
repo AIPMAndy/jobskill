@@ -14,7 +14,7 @@
 
 [English](README.en.md) | 简体中文
 
-[🚀 在线演示](#) · [📖 文档](#) · [💬 社区](#) · [🐛 报告问题](https://github.com/AIPMAndy/jobskill/issues)
+[🐛 报告问题](https://github.com/AIPMAndy/jobskill/issues) · [💬 讨论区](https://github.com/AIPMAndy/jobskill/discussions) · [⭐ Star 支持](https://github.com/AIPMAndy/jobskill/stargazers)
 
 </div>
 
@@ -396,7 +396,7 @@ docker run -p 3000:3000   -e ANTHROPIC_API_KEY=your_key   -v ./data:/app/data   
 - 📝 改进文档
 - 🧪 编写测试
 
-[查看贡献指南](CONTRIBUTING.md)
+[查看贡献指南](https://github.com/AIPMAndy/jobskill/blob/main/CONTRIBUTING.md)
 
 </td>
 <td width="33%">
@@ -407,7 +407,7 @@ docker run -p 3000:3000   -e ANTHROPIC_API_KEY=your_key   -v ./data:/app/data   
 - 📸 提供截图/视频
 - 💡 提出设计建议
 
-[设计规范](docs/design.md)
+[贡献设计素材](https://github.com/AIPMAndy/jobskill/discussions/new?category=show-and-tell)
 
 </td>
 <td width="33%">
@@ -418,7 +418,7 @@ docker run -p 3000:3000   -e ANTHROPIC_API_KEY=your_key   -v ./data:/app/data   
 - 📝 写使用教程
 - 💬 回答社区问题
 
-[推广素材](docs/marketing.md)
+[分享到社交媒体](https://github.com/AIPMAndy/jobskill/discussions/new?category=show-and-tell)
 
 </td>
 </tr>
@@ -442,8 +442,7 @@ docker run -p 3000:3000   -e ANTHROPIC_API_KEY=your_key   -v ./data:/app/data   
 
 - 💬 [GitHub Discussions](https://github.com/AIPMAndy/jobskill/discussions) - 提问、分享经验
 - 🐛 [GitHub Issues](https://github.com/AIPMAndy/jobskill/issues) - 报告 Bug、功能请求
-- 📖 [文档](https://jobskill.dev/docs) - 详细使用指南
-- 📧 [Email](mailto:andy@jobskill.dev) - 商务合作
+- 📧 [联系作者](https://github.com/AIPMAndy) - 商务合作
 
 </td>
 <td width="50%">
@@ -452,22 +451,11 @@ docker run -p 3000:3000   -e ANTHROPIC_API_KEY=your_key   -v ./data:/app/data   
 
 - 🐦 [Twitter/X](https://twitter.com/AIPMAndy) - 产品更新、求职技巧
 - 💼 [LinkedIn](https://linkedin.com/in/aipmAndy) - 职业发展内容
-- 📺 [YouTube](https://youtube.com/@AIPMAndy) - 视频教程
-- 💬 微信群 - 扫码加入（见下方）
+- 💬 [GitHub](https://github.com/AIPMAndy) - 开源项目
 
 </td>
 </tr>
 </table>
-
-<div align="center">
-
-### 微信交流群
-
-<img src="https://via.placeholder.com/200x200/1a1a1a/ffffff?text=WeChat+QR" width="200" />
-
-*扫码添加，备注「JobSkill」*
-
-</div>
 
 ---
 
