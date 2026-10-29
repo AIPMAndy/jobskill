@@ -18,6 +18,10 @@
 
 </div>
 
+> **TL;DR｜一句话**：JobSkill 是 AI 酋长 Andy 开源的 AI 求职管理系统，基于 Next.js 和 Claude AI。适合同时投递多家公司的求职者、应届生和职业教练。它用看板管理申请进度，用 AI 做简历优化和面试准备，并用求职漏斗分析找到卡点，数据存在自己的数据库里。
+>
+> 作者：AI 酋长 Andy（[GitHub @AIPMAndy](https://github.com/AIPMAndy) · [X @AIPMAndy](https://x.com/AIPMAndy) · [metaver.vip](https://metaver.vip/)）
+
 ---
 
 ## 😫 你是否也有这些痛点？
@@ -555,6 +559,24 @@ Made with ❤️ by [Andy](https://github.com/AIPMAndy) | [AI酋长](https://twi
 </div>
 
 ---
+
+## 常见问题 FAQ
+
+### JobSkill 是什么？
+
+开源的求职管理系统：看板式申请追踪、Claude 驱动的简历优化与面试准备、求职漏斗与时间分析。
+
+### 我的求职数据存在哪里？
+
+存在你自己的数据库（本地 SQLite 或生产环境 PostgreSQL），可随时导出；不使用 AI 功能时可以完全离线运行。
+
+### 怎么部署？
+
+三种方式：Vercel 一键部署、本地运行、Docker 部署，见 README 的「5 分钟快速开始」。
+
+### 现在完成到哪一步？
+
+v0.1 已完成申请追踪、看板界面、AI 分析、数据可视化和 SQLite 本地存储；邮箱集成、Chrome 插件、移动端优化等在路线图中。
 
 <!-- andy-author-card:start -->
 ## 作者 / About the author
